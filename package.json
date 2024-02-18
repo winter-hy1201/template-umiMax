@@ -15,6 +15,7 @@
     "@ant-design/pro-components": "^2.6.49",
     "@umijs/max": "^4.1.1",
     "antd": "^5.14.0",
+    "lodash-es": "^4.17.21",
     "zustand": "^4.5.1"
   },
   "devDependencies": {

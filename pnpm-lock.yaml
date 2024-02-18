@@ -17,6 +17,9 @@ dependencies:
   antd:
     specifier: ^5.14.0
     version: 5.14.0(react-dom@18.2.0)(react@18.2.0)
+  lodash-es:
+    specifier: ^4.17.21
+    version: 4.17.21
   zustand:
     specifier: ^4.5.1
     version: 4.5.1(@types/react@18.2.54)(react@18.2.0)
