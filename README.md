@@ -1,3 +1,11 @@
 # README
 
-`@umijs/max` 模板项目，更多功能参考 [Umi Max 简介](https://umijs.org/docs/max/introduce)
+# 技术栈
+
+`react` + `ts` + `umi-max` + `antd` + `zustand` + `husky/lint-staged/prettier`
+
+# 项目启动
+
+`pnpm install`
+
+`pnpm dev`
