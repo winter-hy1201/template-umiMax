@@ -9,6 +9,7 @@ export default defineConfig({
   request: {},
   layout: {
     title: '@umijs/max',
+    locale: false,
   },
   routes,
   npmClient: 'pnpm',
