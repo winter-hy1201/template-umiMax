@@ -2,7 +2,7 @@
 
 # 技术栈
 
-`react` + `ts` + `umi-max` + `antd` + `zustand` + `husky/lint-staged/prettier`
+`react` + `ts` + `tailwindcss` + `less` + `umi-max` + `antd` + `zustand` + `husky/lint-staged/prettier`
 
 # 项目启动
 
