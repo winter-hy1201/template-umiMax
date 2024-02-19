@@ -1,6 +1,14 @@
+import { styled, useAntdConfig, useAntdConfigSetter } from '@umijs/max';
 import { Layout, Space, Switch, theme, version } from 'antd';
-import { useAntdConfig, useAntdConfigSetter } from 'umi';
 const { darkAlgorithm, defaultAlgorithm, useToken } = theme;
+
+type H1Props = {
+  color?: string;
+};
+
+const H1 = styled.h1<H1Props>`
+  color: ${(props: H1Props) => props?.color};
+`;
 
 export default function Page() {
   const setAntdConfig = useAntdConfigSetter();
@@ -10,15 +18,10 @@ export default function Page() {
 
   return (
     <Layout>
-      <h1
-        style={{
-          color: token.colorPrimary,
-        }}
-      >
-        with antd@{version}
-      </h1>
+      <H1 color={token.colorPrimary}>with antd@{version}</H1>
       <Space>
-        isDarkTheme
+        <H1 color={token.colorPrimary}>isDarkTheme</H1>
+
         <Switch
           checked={antdConfig?.theme?.algorithm.includes(darkAlgorithm)}
           onChange={(data) => {
@@ -26,14 +29,13 @@ export default function Page() {
             setAntdConfig({
               theme: {
                 algorithm: [data ? darkAlgorithm : defaultAlgorithm],
-                // token: {
-                //   // Seed Token，影响范围大
-                //   colorPrimary: '#00b96b',
-                //   borderRadius: 2,
+                token: {
+                  colorPrimary: data ? '#00b96b' : '#1890ff',
+                  //   borderRadius: 2,
 
-                //   // 派生变量，影响范围小
-                //   colorBgContainer: '#f6ffed',
-                // },
+                  //   // 派生变量，影响范围小
+                  //   colorBgContainer: '#f6ffed',
+                },
               },
             });
             // or
