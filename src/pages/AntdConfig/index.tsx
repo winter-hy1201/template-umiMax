@@ -18,7 +18,13 @@ export default function Page() {
         with antd@{version}
       </h1>
       <Space>
-        isDarkTheme
+        <h1
+          style={{
+            color: token.colorPrimary,
+          }}
+        >
+          isDarkTheme
+        </h1>
         <Switch
           checked={antdConfig?.theme?.algorithm.includes(darkAlgorithm)}
           onChange={(data) => {
@@ -26,14 +32,13 @@ export default function Page() {
             setAntdConfig({
               theme: {
                 algorithm: [data ? darkAlgorithm : defaultAlgorithm],
-                // token: {
-                //   // Seed Token，影响范围大
-                //   colorPrimary: '#00b96b',
-                //   borderRadius: 2,
+                token: {
+                  // Seed Token，影响范围大
+                  colorPrimary: data ? '#00b96b' : '#1890ff',
 
-                //   // 派生变量，影响范围小
-                //   colorBgContainer: '#f6ffed',
-                // },
+                  // // 派生变量，影响范围小
+                  // colorBgContainer: '#f6ffed',
+                },
               },
             });
             // or
