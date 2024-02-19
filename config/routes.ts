@@ -13,4 +13,9 @@ export default [
     path: '/table',
     component: './Table',
   },
+  {
+    name: 'AntdConfig',
+    path: '/AntdConfig',
+    component: './AntdConfig',
+  },
 ];
