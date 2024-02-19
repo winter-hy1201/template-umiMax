@@ -2,7 +2,7 @@ import { useStore } from '@/store/index';
 import { PageContainer } from '@ant-design/pro-components';
 import { Button } from 'antd';
 
-const HomePage: React.FC = () => {
+const Zustand: React.FC = () => {
   const count = useStore((state) => state.count);
   const increment = useStore((state) => state.increment);
   const removeAllCount = useStore((state) => state.removeAllCount);
@@ -22,4 +22,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default Zustand;

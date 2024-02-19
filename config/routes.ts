@@ -14,8 +14,18 @@ export default [
     component: './Table',
   },
   {
+    name: 'Zustand',
+    path: '/Zustand',
+    component: './Zustand',
+  },
+  {
     name: 'AntdConfig',
     path: '/AntdConfig',
     component: './AntdConfig',
+  },
+  {
+    name: 'StyledComponent',
+    path: '/StyledComponent',
+    component: './StyledComponent',
   },
 ];

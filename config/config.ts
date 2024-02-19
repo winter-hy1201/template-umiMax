@@ -14,6 +14,6 @@ export default defineConfig({
   },
   routes,
   npmClient: 'pnpm',
-  tailwindcss: {},
   reactQuery: {},
+  styledComponents: {},
 });
