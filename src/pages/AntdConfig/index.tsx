@@ -1,5 +1,5 @@
+import { styled, useAntdConfig, useAntdConfigSetter } from '@umijs/max';
 import { Layout, Space, Switch, theme, version } from 'antd';
-import { styled, useAntdConfig, useAntdConfigSetter } from 'umi';
 const { darkAlgorithm, defaultAlgorithm, useToken } = theme;
 
 type H1Props = {

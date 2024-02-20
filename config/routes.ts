@@ -28,4 +28,9 @@ export default [
     path: '/StyledComponent',
     component: './StyledComponent',
   },
+  {
+    name: 'ReactQuery',
+    path: '/ReactQuery',
+    component: './ReactQuery',
+  },
 ];
