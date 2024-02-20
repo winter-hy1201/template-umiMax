@@ -1,6 +1,6 @@
 import { getListApi } from '@/api/test';
 import { PageContainer } from '@ant-design/pro-components';
-import { useQuery } from 'umi';
+import { useQuery } from '@umijs/max';
 
 const getPostById = async () => {
   const result = await getListApi({
