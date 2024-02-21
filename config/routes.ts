@@ -9,19 +9,14 @@ export default [
     component: './Home',
   },
   {
-    name: ' CRUD 示例',
-    path: '/table',
-    component: './Table',
-  },
-  {
     name: 'Zustand',
     path: '/Zustand',
     component: './Zustand',
   },
   {
-    name: 'AntdConfig',
-    path: '/AntdConfig',
-    component: './AntdConfig',
+    name: 'AntdThemeConfig',
+    path: '/AntdThemeConfig',
+    component: './AntdThemeConfig',
   },
   {
     name: 'StyledComponent',
